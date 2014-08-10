@@ -11,9 +11,7 @@ if (!file.exists('working_data.RDS')) {
     needed_data <- subset(working_data, Date >= "2007-02-01" & Date <= "2007-02-02")
 
     saveRDS(needed_data, file = "working_data.RDS")
-}
-
-else {
+} else {
     needed_data <- readRDS('working_data.RDS')
 }
 
